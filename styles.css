@@ -1,0 +1,76 @@
+html {
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+	width: 100%;
+	box-sizing: border-box;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #1c1c1c;
+	color: whitesmoke;
+	width: 90vw;
+	margin: 0 auto;
+}
+
+.main-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2em;
+	margin: 0 auto;
+	border: 2px solid rgba(255, 255, 255, 0.068);
+	border-radius: 18px;
+	background-color: #111;
+	background-image: url("./images/monkey-no-bg.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	transition: all 0.4s ease-in;
+	margin-top: 100px;
+}
+.main-content:hover {
+	background-image: url("./images/resized-image-Promo.png");
+}
+@media only screen and (max-width: 800px) {
+	.main-content {
+		width: 60vw;
+	}
+}
+.top {
+	height: 100%;
+	width: 100%;
+	margin-top: 2vh;
+
+	text-align: left;
+}
+
+h1,
+p {
+	text-align: left;
+	margin: 14px 0;
+}
+h2 {
+	font-size: 14px;
+	font-weight: 400;
+}
+hr {
+	height: 1px;
+	background-color: #2f3e53;
+	border: none;
+}
+.genPassword {
+	margin: 20px 0;
+	margin-bottom: 30px;
+	background-color: #10b981;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 12px;
+	color: azure;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+	margin-right: 10px;
+}
+.h1 {
+	color: #10b981;
+}
