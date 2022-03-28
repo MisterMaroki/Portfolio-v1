@@ -1,0 +1,265 @@
+:root {
+	font-size: 16px;
+}
+// * {
+// 	touch-action: none;
+// }
+::-webkit-scrollbar {
+	display: none;
+}
+html {
+	height: 100vh;
+	width: 100vw;
+}
+html,
+body {
+	padding: 0;
+	margin: 0;
+
+	background-image: none;
+	background-color: #0d0d0d;
+
+	background-repeat: no-repeat;
+}
+body {
+	font-family: "Montserrat", sans-serif;
+	color: whitesmoke;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+
+	-webkit-font-smoothing: antialiased;
+}
+
+.navbar {
+	position: fixed;
+	display: block;
+	background: #ae77b300;
+	top: 50%;
+	right: 3%;
+	z-index: 10;
+	padding: 10px;
+
+	ul {
+		position: fixed;
+		width: 90vh;
+
+		transform: rotate(90deg) translateX(-50%);
+		transform-origin: left top;
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		z-index: 10;
+
+		.nav-link {
+			flex-basis: 200px;
+			text-align: center;
+			a,
+			a:link {
+				padding: 10px;
+				text-transform: uppercase;
+				text-decoration: none !important;
+				z-index: 10;
+				color: #fff;
+				letter-spacing: 2px;
+			}
+			a:hover,
+			a:focus,
+			a:active {
+				color: aqua;
+				padding-bottom: 1vw;
+				border-bottom: 4px dashed aqua;
+			}
+		}
+	}
+}
+@media (max-width: 1500px) and (min-width: 1100px) {
+	.navbar {
+		right: 8%;
+	}
+	.navbar ul {
+		transform: rotate(94deg) translateX(-50%);
+	}
+}
+
+.FixedHeightContainer {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+.Content {
+	height: 94%;
+
+	transition: 0.3s;
+}
+a {
+	text-decoration: inherit;
+	color: inherit;
+}
+.icons {
+	display: flex;
+	flex-direction: row;
+	width: 20vw;
+	position: fixed;
+	bottom: 0;
+	i {
+		color: #fff;
+		margin: 15px;
+		transform: scale(2);
+	}
+	i:hover {
+		color: rgba(255, 255, 255, 0.534);
+	}
+}
+@media (max-width: 1500px) and (min-width: 1100px) {
+	html {
+		background-image: url("./images/Untitled-1.png");
+		background-size: cover;
+	}
+	body {
+		width: 80vw;
+		padding-top: 15.5vh;
+		padding-left: 12.5vw;
+	}
+	html,
+	body {
+		background-color: transparent;
+	}
+
+	.FixedHeightContainer {
+		height: 75vh;
+		perspective: 1000px;
+	}
+	.Content {
+		overflow-y: visible;
+		overflow-x: scroll;
+		transform: rotateX(-4deg);
+	}
+}
+@media (max-width: 1430px) and (min-width: 1100px) {
+	.FixedHeightContainer {
+		height: 70vh;
+	}
+}
+.container {
+	height: 100%;
+	width: 100%;
+	padding: 4rem 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.text-block {
+	width: 100%;
+	max-width: 1200px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+	margin-left: 1vw;
+	.para {
+		padding-bottom: 1rem;
+		padding-right: 3rem;
+		width: 90%;
+		word-wrap: break-word;
+	}
+}
+
+.colour-block-div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 20px;
+	width: 80%;
+	text-align: right;
+}
+.colour-block {
+	height: 15px;
+	flex: 1;
+	background-color: darkslategray;
+
+	margin-right: 10px;
+	// margin: 4px 7px;
+	border-radius: 4px;
+}
+.small {
+	flex: 1;
+}
+.medium {
+	flex: 2;
+}
+.large {
+	flex: 3;
+}
+.pink {
+	background: rgb(63, 94, 251);
+	background: linear-gradient(
+		90deg,
+		rgba(63, 94, 251, 1) 0%,
+		rgba(252, 70, 107, 1) 100%
+	);
+}
+.orange {
+	background: rgb(131, 58, 180);
+	background: linear-gradient(
+		90deg,
+		rgba(131, 58, 180, 1) 0%,
+		rgba(253, 29, 29, 1) 50%,
+		rgba(252, 176, 69, 1) 100%
+	);
+}
+.blue {
+	background: rgb(238, 174, 202);
+	background: linear-gradient(
+		90deg,
+		rgba(238, 174, 202, 1) 0%,
+		rgba(148, 187, 233, 1) 100%
+	);
+}
+.green {
+	background: rgb(0, 161, 117);
+	background: linear-gradient(
+		75deg,
+		rgba(0, 161, 117, 1) 0%,
+		rgba(101, 174, 255, 1) 100%
+	);
+}
+.purple {
+	background: rgb(0, 161, 117);
+	background: linear-gradient(
+		75deg,
+		rgba(0, 161, 117, 1) 0%,
+		rgba(100, 3, 161, 1) 0%,
+		rgba(101, 174, 255, 1) 100%
+	);
+}
+.transparent {
+	background-color: #0d0d0d;
+}
+.fake-tag {
+	font-family: "Unkempt", cursive;
+	font-size: 1.2rem;
+	margin-right: 2vw;
+	font-style: italic;
+}
+.title {
+	margin-bottom: 2vh;
+	h1 {
+		font-weight: 700;
+		font-size: 3rem;
+		margin: 1vh;
+	}
+}
+@media (max-width: 550px) {
+	.title > h1 {
+		font-size: 2rem;
+	}
+	.text-block {
+		margin: 6vw;
+	}
+}
