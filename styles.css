@@ -11,6 +11,8 @@ html {
   width: 100vw;
   overflow: hidden;
   background-color: #0d0d0d;
+  -ms-touch-action: none;
+      touch-action: none;
   background-repeat: no-repeat;
 }
 
@@ -90,6 +92,9 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
+  z-index: 5;
+  -ms-touch-action: auto;
+      touch-action: auto;
 }
 
 .Content {
@@ -98,6 +103,9 @@ body {
   overflow-y: scroll;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  z-index: 5;
+  -ms-touch-action: auto;
+      touch-action: auto;
 }
 
 a {
@@ -130,7 +138,7 @@ a {
   color: rgba(255, 255, 255, 0.534);
 }
 
-@media (min-aspect-ratio: 12 / 9) and (max-aspect-ratio: 15 / 9) {
+@media (min-aspect-ratio: 12 / 9) and (max-aspect-ratio: 19 / 9) {
   html {
     background-image: url("./images/Untitled-1.png");
     background-size: cover;
@@ -164,7 +172,7 @@ a {
   }
 }
 
-@media (min-aspect-ratio: 13 / 9) and (max-aspect-ratio: 15 / 9) {
+@media (min-aspect-ratio: 13 / 9) and (max-aspect-ratio: 29 / 18) {
   .FixedHeightContainer {
     padding-top: 13vh;
   }
@@ -176,7 +184,7 @@ a {
   }
 }
 
-@media (min-aspect-ratio: 14 / 9) and (max-aspect-ratio: 15 / 9) {
+@media (min-aspect-ratio: 14 / 9) and (max-aspect-ratio: 29 / 18) {
   .navbar {
     right: 10%;
   }
@@ -191,7 +199,7 @@ a {
   }
 }
 
-@media (min-aspect-ratio: 29 / 18) and (max-aspect-ratio: 15 / 9) {
+@media (min-aspect-ratio: 28 / 18) and (max-aspect-ratio: 29 / 18) {
   .FixedHeightContainer {
     padding-top: 10vh;
   }
@@ -200,6 +208,27 @@ a {
   }
   .icons {
     bottom: 13vh;
+  }
+}
+
+@media (min-aspect-ratio: 30 / 18) and (max-aspect-ratio: 19 / 9) {
+  .navbar {
+    right: 11%;
+  }
+  .FixedHeightContainer {
+    padding-top: 5vh;
+  }
+  .Content {
+    height: 83vh;
+  }
+  .icons {
+    bottom: 7vh;
+  }
+}
+
+@media (min-aspect-ratio: 36 / 18) and (max-aspect-ratio: 19 / 9) {
+  .icons {
+    bottom: 2vh;
   }
 }
 
@@ -218,7 +247,7 @@ a {
 
 .text-block {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1100px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -343,6 +372,14 @@ a {
   }
   .text-block {
     margin-left: 6vw;
+  }
+  .FixedHeightContainer {
+    max-height: 80vh;
+    overflow: hidden;
+  }
+  .Content {
+    height: 100%;
+    margin: auto;
   }
 }
 /*# sourceMappingURL=styles.css.map */
