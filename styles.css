@@ -86,16 +86,6 @@ body {
   border-bottom: 4px dashed aqua;
 }
 
-@media (max-width: 1500px) and (min-width: 1100px) {
-  .navbar {
-    right: 8%;
-  }
-  .navbar ul {
-    -webkit-transform: rotate(94deg) translateX(-50%);
-            transform: rotate(94deg) translateX(-50%);
-  }
-}
-
 .FixedHeightContainer {
   height: 100%;
   width: 100%;
@@ -124,49 +114,95 @@ a {
   width: 20vw;
   position: fixed;
   bottom: 0;
+  z-index: 11;
 }
 
 .icons i {
   color: #fff;
   margin: 15px;
-  -webkit-transform: scale(2);
-          transform: scale(2);
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
 }
 
 .icons i:hover {
   color: rgba(255, 255, 255, 0.534);
 }
 
-@media (max-width: 1500px) and (min-width: 1100px) {
+@media (min-aspect-ratio: 12 / 9) and (max-aspect-ratio: 15 / 9) {
   html {
     background-image: url("./images/Untitled-1.png");
     background-size: cover;
+    background-attachment: local;
+    background-position: center;
   }
   body {
     width: 80vw;
-    padding-top: 15.5vh;
-    padding-left: 12.5vw;
   }
   html,
   body {
     background-color: transparent;
   }
+  .navbar {
+    right: 9%;
+  }
+  .navbar ul {
+    -webkit-transform: rotate(94deg) translateX(-50%);
+            transform: rotate(94deg) translateX(-50%);
+  }
   .FixedHeightContainer {
-    height: 75vh;
     -webkit-perspective: 1000px;
             perspective: 1000px;
+    padding-top: 14vh;
+    padding-left: 12.5vw;
   }
   .Content {
-    overflow-y: visible;
-    overflow-x: scroll;
+    height: 67vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
     -webkit-transform: rotateX(-4deg);
             transform: rotateX(-4deg);
   }
+  .icons {
+    bottom: 15vh;
+  }
 }
 
-@media (max-width: 1430px) and (min-width: 1100px) {
+@media (min-aspect-ratio: 13 / 9) and (max-aspect-ratio: 15 / 9) {
   .FixedHeightContainer {
-    height: 70vh;
+    padding-top: 13vh;
+  }
+  .Content {
+    height: 69vh;
+  }
+  .icons {
+    bottom: 14vh;
+  }
+}
+
+@media (min-aspect-ratio: 14 / 9) and (max-aspect-ratio: 15 / 9) {
+  .navbar {
+    right: 10%;
+  }
+  .FixedHeightContainer {
+    padding-top: 11vh;
+  }
+  .Content {
+    height: 73vh;
+  }
+  .icons {
+    bottom: 12vh;
+  }
+}
+
+@media (min-aspect-ratio: 29 / 18) and (max-aspect-ratio: 15 / 9) {
+  .FixedHeightContainer {
+    padding-top: 10vh;
+  }
+  .Content {
+    height: 74vh;
+  }
+  .icons {
+    bottom: 11vh;
   }
 }
 
