@@ -244,7 +244,7 @@ a {
 
 @media (min-aspect-ratio: 12/9) and (max-aspect-ratio: 19/9) {
 	html {
-		background-image: url("./images/bg-13-9.png");
+		background-image: url("./images/bg-12-9.png");
 		background-size: cover;
 		background-attachment: local;
 		background-position: center;
@@ -283,22 +283,25 @@ a {
 		}
 	}
 	.icons {
-		bottom: 15vh;
+		bottom: 12vh;
 	}
 }
-@media (min-aspect-ratio: 13/9) and (max-aspect-ratio: 29/18) {
+@media (min-aspect-ratio: 13/9) and (max-aspect-ratio: 19/9) {
+	html {
+		background-image: url("./images/bg-13-9.png");
+	}
 	.FixedHeightContainer {
-		padding-top: 13vh;
+		padding-top: 12vh;
 	}
 	.Content {
-		height: 68vh;
+		height: 70vh;
 	}
 	.icons {
-		bottom: 14vh;
+		bottom: 13vh;
 	}
 }
 
-@media (min-aspect-ratio: 14/9) and (max-aspect-ratio: 29/18) {
+@media (min-aspect-ratio: 27/18) and (max-aspect-ratio: 19/9) {
 	.navbar {
 		right: 10%;
 	}
@@ -309,41 +312,51 @@ a {
 		height: 73vh;
 	}
 	.icons {
+		bottom: 11vh;
+	}
+}
+@media (min-aspect-ratio: 14/9) and (max-aspect-ratio: 19/9) {
+	.FixedHeightContainer {
+		padding-top: 11vh;
+	}
+	.Content {
+		height: 73vh;
+	}
+	.icons {
 		bottom: 12vh;
 	}
+	html {
+		background-image: url("./images/bg-14-9.png");
+	}
 }
 
-@media (min-aspect-ratio: 28/18) and (max-aspect-ratio: 29/18) {
+@media (min-aspect-ratio: 15/9) and (max-aspect-ratio: 19/9) {
 	.FixedHeightContainer {
-		padding-top: 10vh;
+		padding-top: 13vh;
 	}
 	.Content {
-		height: 74vh;
+		height: 69vh;
 	}
 	.icons {
-		bottom: 13vh;
+		bottom: 14vh;
+	}
+	html {
+		background-image: url("./images/bg-15-9.png");
 	}
 }
 
-@media (min-aspect-ratio: 30/18) and (max-aspect-ratio: 19/9) {
-	.navbar {
-		right: 11%;
+@media (min-aspect-ratio: 16/9) and (max-aspect-ratio: 19/9) {
+	html {
+		background-image: url("./images/bg.16-9-1.png");
 	}
-
 	.FixedHeightContainer {
-		padding-top: 5vh;
+		padding-top: 9vh;
 	}
 	.Content {
-		height: 83vh;
+		height: 80vh;
 	}
 	.icons {
-		bottom: 7vh;
-	}
-}
-
-@media (min-aspect-ratio: 36/18) and (max-aspect-ratio: 19/9) {
-	.icons {
-		bottom: 2vh;
+		bottom: 8vh;
 	}
 }
 @media (max-aspect-ratio: 10/9) {
