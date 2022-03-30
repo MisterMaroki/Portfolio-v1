@@ -302,7 +302,7 @@ a {
 
 @media (min-aspect-ratio: 10 / 9) and (max-aspect-ratio: 19 / 9) {
   :root {
-    font-size: 13px;
+    font-size: 15px;
   }
   html {
     background-image: url("./images/bg-11-9.png");
@@ -372,6 +372,9 @@ a {
 }
 
 @media (min-aspect-ratio: 12 / 9) and (max-aspect-ratio: 19 / 9) {
+  :root {
+    font-size: 16px;
+  }
   html {
     background-image: url("./images/bg-12-9.png");
   }
