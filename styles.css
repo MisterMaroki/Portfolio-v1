@@ -300,7 +300,7 @@ a {
   margin: 1vh;
 }
 
-@media (min-aspect-ratio: 12 / 9) and (max-aspect-ratio: 19 / 9) {
+@media (min-aspect-ratio: 21 / 18) and (max-aspect-ratio: 19 / 9) {
   html {
     background-image: url("./images/bg-12-9.png");
     background-size: cover;
@@ -420,14 +420,41 @@ a {
   html {
     background-image: url("./images/bg.16-9-1.png");
   }
-  .FixedHeightContainer {
-    padding-top: 7vh;
-  }
   .Content {
-    height: 80vh;
+    height: 74vh;
   }
   .icons {
-    bottom: 8vh;
+    bottom: 11vh;
+  }
+}
+
+@media (min-aspect-ratio: 33 / 18) and (max-aspect-ratio: 19 / 9) {
+  html {
+    background-image: url("./images/bg.16-9-1.png");
+  }
+  .FixedHeightContainer {
+    padding-top: 11vh;
+  }
+  .Content {
+    height: 74vh;
+  }
+  .icons {
+    bottom: 11vh;
+  }
+}
+
+@media (min-aspect-ratio: 17 / 9) and (max-aspect-ratio: 19 / 9) {
+  html {
+    background-image: url("./images/bg.17-9.png");
+  }
+  .FixedHeightContainer {
+    padding-top: 11vh;
+  }
+  .Content {
+    height: 74vh;
+  }
+  .icons {
+    bottom: 11vh;
   }
 }
 
