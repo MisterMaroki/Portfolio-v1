@@ -111,108 +111,35 @@ a {
 		color: rgba(255, 255, 255, 0.534);
 	}
 }
-@media (min-aspect-ratio: 12/9) and (max-aspect-ratio: 19/9) {
-	html {
-		background-image: url("./images/Untitled-1.png");
-		background-size: cover;
-		background-attachment: local;
-		background-position: center;
-	}
-
-	html,
-	body {
-		background-color: transparent;
-	}
-	.navbar {
-		right: 9%;
-	}
-	.navbar ul {
-		transform: rotate(94deg) translateX(-50%);
-	}
-	.FixedHeightContainer {
-		perspective: 1000px;
-		padding-top: 14vh;
-		padding-left: 12.5vw;
-	}
-	.Content {
-		height: 67vh;
-
-		transform: rotateX(-4deg);
-	}
-	.icons {
-		bottom: 15vh;
-	}
-}
-@media (min-aspect-ratio: 13/9) and (max-aspect-ratio: 29/18) {
-	.FixedHeightContainer {
-		padding-top: 13vh;
-	}
-	.Content {
-		height: 68vh;
-	}
-	.icons {
-		bottom: 14vh;
-	}
-}
-
-@media (min-aspect-ratio: 14/9) and (max-aspect-ratio: 29/18) {
-	.navbar {
-		right: 10%;
-	}
-	.FixedHeightContainer {
-		padding-top: 11vh;
-	}
-	.Content {
-		height: 73vh;
-	}
-	.icons {
-		bottom: 12vh;
-	}
-}
-
-@media (min-aspect-ratio: 28/18) and (max-aspect-ratio: 29/18) {
-	.FixedHeightContainer {
-		padding-top: 10vh;
-	}
-	.Content {
-		height: 74vh;
-	}
-	.icons {
-		bottom: 13vh;
-	}
-}
-
-@media (min-aspect-ratio: 30/18) and (max-aspect-ratio: 19/9) {
-	.navbar {
-		right: 11%;
-	}
-
-	.FixedHeightContainer {
-		padding-top: 5vh;
-	}
-	.Content {
-		height: 83vh;
-	}
-	.icons {
-		bottom: 7vh;
-	}
-}
-
-@media (min-aspect-ratio: 36/18) and (max-aspect-ratio: 19/9) {
-	.icons {
-		bottom: 2vh;
-	}
-}
 
 .container {
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 	padding: 4rem 0;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row-reverse;
+	justify-content: center;
 }
-
+.profile-img {
+	flex: 2;
+	background-image: url(/images/monkey-no-bg.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: none;
+	margin-right: 5vw;
+	transition: background 0.5s ease-out;
+	.colour-block-div {
+		display: none;
+	}
+}
+.container:nth-of-type(1):hover {
+	.profile-img {
+		background-image: url(/images/monkey-color-bg.png);
+	}
+}
 .text-block {
+	flex: 5;
 	width: 100%;
 	max-width: 1100px;
 	height: 100%;
@@ -312,6 +239,107 @@ a {
 		font-weight: 700;
 		font-size: 3rem;
 		margin: 1vh;
+	}
+}
+
+@media (min-aspect-ratio: 12/9) and (max-aspect-ratio: 19/9) {
+	html {
+		background-image: url("./images/Untitled-1.png");
+		background-size: cover;
+		background-attachment: local;
+		background-position: center;
+	}
+
+	html,
+	body {
+		background-color: transparent;
+	}
+	.navbar {
+		right: 9%;
+	}
+	.navbar ul {
+		transform: rotate(94deg) translateX(-50%);
+	}
+	.FixedHeightContainer {
+		perspective: 1000px;
+		padding-top: 14vh;
+		padding-left: 12.5vw;
+	}
+	.Content {
+		height: 67vh;
+
+		transform: rotateX(-4deg);
+	}
+	.profile-img {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 80%;
+		margin: auto 5vw auto 0;
+		transform: rotate(0.2deg) translateX(-5%);
+	}
+	.icons {
+		bottom: 15vh;
+	}
+}
+@media (min-aspect-ratio: 13/9) and (max-aspect-ratio: 29/18) {
+	.FixedHeightContainer {
+		padding-top: 13vh;
+	}
+	.Content {
+		height: 68vh;
+	}
+	.icons {
+		bottom: 14vh;
+	}
+}
+
+@media (min-aspect-ratio: 14/9) and (max-aspect-ratio: 29/18) {
+	.navbar {
+		right: 10%;
+	}
+	.FixedHeightContainer {
+		padding-top: 11vh;
+	}
+	.Content {
+		height: 73vh;
+	}
+	.icons {
+		bottom: 12vh;
+	}
+}
+
+@media (min-aspect-ratio: 28/18) and (max-aspect-ratio: 29/18) {
+	.FixedHeightContainer {
+		padding-top: 10vh;
+	}
+	.Content {
+		height: 74vh;
+	}
+	.icons {
+		bottom: 13vh;
+	}
+}
+
+@media (min-aspect-ratio: 30/18) and (max-aspect-ratio: 19/9) {
+	.navbar {
+		right: 11%;
+	}
+
+	.FixedHeightContainer {
+		padding-top: 5vh;
+	}
+	.Content {
+		height: 83vh;
+	}
+	.icons {
+		bottom: 7vh;
+	}
+}
+
+@media (min-aspect-ratio: 36/18) and (max-aspect-ratio: 19/9) {
+	.icons {
+		bottom: 2vh;
 	}
 }
 @media (max-aspect-ratio: 10/9) {
