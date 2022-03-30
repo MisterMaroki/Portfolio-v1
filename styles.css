@@ -300,9 +300,9 @@ a {
   margin: 1vh;
 }
 
-@media (min-aspect-ratio: 21 / 18) and (max-aspect-ratio: 19 / 9) {
+@media (min-aspect-ratio: 10 / 9) and (max-aspect-ratio: 19 / 9) {
   html {
-    background-image: url("./images/bg-12-9.png");
+    background-image: url("./images/bg-11-9.png");
     background-size: cover;
     background-attachment: local;
     background-position: center;
@@ -352,7 +352,34 @@ a {
     display: flex;
   }
   .icons {
-    bottom: 12vh;
+    bottom: 13.5vh;
+  }
+}
+
+@media (min-aspect-ratio: 11 / 9) and (max-aspect-ratio: 19 / 9) {
+  .FixedHeightContainer {
+    padding-top: 13.2vh;
+  }
+  .Content {
+    height: 69vh;
+  }
+  .icons {
+    bottom: 13.5vh;
+  }
+}
+
+@media (min-aspect-ratio: 12 / 9) and (max-aspect-ratio: 19 / 9) {
+  html {
+    background-image: url("./images/bg-12-9.png");
+  }
+  .FixedHeightContainer {
+    padding-top: 12vh;
+  }
+  .Content {
+    height: 70vh;
+  }
+  .icons {
+    bottom: 14vh;
   }
 }
 
@@ -430,7 +457,7 @@ a {
 
 @media (min-aspect-ratio: 33 / 18) and (max-aspect-ratio: 19 / 9) {
   html {
-    background-image: url("./images/bg.16-9-1.png");
+    background-image: url("./images/bg.16-9.png");
   }
   .FixedHeightContainer {
     padding-top: 11vh;
@@ -445,16 +472,16 @@ a {
 
 @media (min-aspect-ratio: 17 / 9) and (max-aspect-ratio: 19 / 9) {
   html {
-    background-image: url("./images/bg.17-9.png");
+    background-image: url("./images/bg-17-9.png");
   }
   .FixedHeightContainer {
-    padding-top: 11vh;
+    padding-top: 11.5vh;
   }
   .Content {
-    height: 74vh;
+    height: 73vh;
   }
   .icons {
-    bottom: 11vh;
+    bottom: 11.5vh;
   }
 }
 
