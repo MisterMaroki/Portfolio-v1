@@ -161,7 +161,7 @@ a {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
-  background-image: url("./images/monkey-no-bg.png");
+  background-image: url("/images/monkey-no-bg.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
