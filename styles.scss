@@ -12,6 +12,8 @@ html {
 	width: 100vw;
 	overflow: hidden;
 	background-color: #0d0d0d;
+	background-blend-mode: multiply;
+	filter: contrast(1.2);
 	touch-action: none;
 	background-repeat: no-repeat;
 }
@@ -122,7 +124,7 @@ a {
 }
 .profile-img {
 	flex: 2;
-	background-image: url(/images/monkey-no-bg.png);
+	background-image: url("./images/monkey-no-bg.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -135,7 +137,7 @@ a {
 }
 .container:nth-of-type(1):hover {
 	.profile-img {
-		background-image: url(/images/monkey-color-bg.png);
+		background-image: url("./images/monkey-color-bg.png");
 	}
 }
 .text-block {
@@ -278,7 +280,7 @@ a {
 		flex-direction: column;
 		justify-content: space-between;
 		height: 80%;
-		max-height: 550px;
+		max-height: 600px;
 		margin: auto 5vw auto 0;
 		transform: rotate(0.2deg) translateX(-5%);
 		.colour-block-div {
@@ -314,7 +316,7 @@ a {
 		height: 70vh;
 	}
 	.icons {
-		bottom: 14vh;
+		bottom: 13vh;
 	}
 }
 
@@ -359,6 +361,7 @@ a {
 	}
 	html {
 		background-image: url("./images/bg-14-9.png");
+		filter: contrast(1.2);
 	}
 }
 
@@ -393,7 +396,7 @@ a {
 }
 @media (min-aspect-ratio: 33/18) and (max-aspect-ratio: 19/9) {
 	html {
-		background-image: url("./images/bg.16-9.png");
+		background-image: url("./images/bg-16-9.png");
 	}
 	.FixedHeightContainer {
 		padding-top: 11vh;
