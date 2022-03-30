@@ -276,9 +276,11 @@ a {
 		justify-content: space-between;
 		height: 80%;
 		max-height: 550px;
-
 		margin: auto 5vw auto 0;
 		transform: rotate(0.2deg) translateX(-5%);
+		.colour-block-div {
+			display: flex;
+		}
 	}
 	.icons {
 		bottom: 15vh;

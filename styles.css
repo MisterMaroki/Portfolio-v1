@@ -346,6 +346,11 @@ a {
     -webkit-transform: rotate(0.2deg) translateX(-5%);
             transform: rotate(0.2deg) translateX(-5%);
   }
+  .profile-img .colour-block-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .icons {
     bottom: 15vh;
   }
