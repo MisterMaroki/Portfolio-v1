@@ -12,8 +12,6 @@ html {
   overflow: hidden;
   background-color: #0d0d0d;
   background-blend-mode: multiply;
-  -webkit-filter: contrast(1.2);
-          filter: contrast(1.2);
   -ms-touch-action: none;
       touch-action: none;
   background-repeat: no-repeat;
@@ -283,7 +281,7 @@ a {
 }
 
 .transparent {
-  background-color: #0d0d0d;
+  background-color: transparent;
 }
 
 .fake-tag {
@@ -434,8 +432,6 @@ a {
   }
   html {
     background-image: url("./images/bg-14-9.png");
-    -webkit-filter: contrast(1.2);
-            filter: contrast(1.2);
   }
 }
 
@@ -482,6 +478,9 @@ a {
 }
 
 @media (max-aspect-ratio: 10 / 9) {
+  html {
+    background-image: url("./images/bg-mobile.png");
+  }
   .title > h1 {
     font-size: 2rem;
   }
